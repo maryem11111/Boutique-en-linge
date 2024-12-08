@@ -1,0 +1,113 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h5, h2 {
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.navbar-brand::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+   
+    transition: width 0.3s ease-in-out;
+    margin-top: 5px;
+}
+.navbar-brand:hover::after {
+    width: 100%;
+} 
+  .custom-nav {
+    background-color:#ECDAC3; 
+    color: white;
+    box-shadow: 0 4px 6px #D8D8D8;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .custom-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  .custom-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.custom-nav.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.custom-nav.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* Fond transparent au défilement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+}
+  .card {
+    overflow: hidden;
+    /*border-radius: 10px;*/
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: #E8E8E8 1px 3px 7px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .card img:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+.card-text p{
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+  
+  /*.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }*/
+  
+  .card button:hover {
+    background-color:#eec0c8;
+  }
+  .about-background img {
+    filter: brightness(60%); 
+    transition: filter 0.3s ease-in-out; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .about-background img:hover {
+    filter: brightness(100%); 
+  }
+  .about-text h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px #D8D8D8; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+about-text p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px #D8D8D8; 
+    line-height: 1.6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ 
